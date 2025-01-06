@@ -1,0 +1,337 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>煙花不生氣的個人網頁</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">YAN</a>
+					</header>
+
+				<!-- Nav -->
+				<nav id="nav">
+					<ul class="links">
+						<li><a href="index.html">活動消息</a></li>
+						<li class="active"><a href="work.html">作品內容</a></li>
+						<li><a href="about me.html">關於我</a></li>
+						<li><a href="contact.html">聯絡方式</a></li>
+					</ul>
+					<ul class="icons">
+						<li><a href="https://x.com/Yancheo771" class="icon brands fa-twitter"target="_blank"></a><span class="label"></span></a></li>
+						<li>
+							<a 
+							  href=https://www.youtube.com/@yan-f4g/videos 
+							  class="icon brands fa-youtube" 
+							  target="_blank">
+							  <span class="label">youtube</span>
+							</a>
+						  </li>
+						  
+						  <li>
+							<a href="https://www.pixiv.net/users/31862332" class="icon brands fa-pixiv" target="_blank">
+							  <span class="label"></span>
+							</a>
+						  </li>
+						  
+					</ul>
+				</nav>
+				<style> .arrow {
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					cursor: pointer;
+					color: rgb(125, 38, 38);
+					font-size: 2rem;
+					user-select: none;
+				}
+		
+				.left-arrow {
+					left: 10px;
+				}
+		
+				.right-arrow {
+					right: 10px;
+				}
+				.slider {
+            position: relative;
+            width: 100%; /* 你可以根據需要調整大小 */
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .slider {
+        position: relative;
+        width: 100%; /* 父容器寬度 */
+        aspect-ratio: 16 / 9; /* 可選：確保幻燈片比例一致 */
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .slides {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+
+    .slide {
+        min-width: 100%; /* 幻燈片寬度 */
+        box-sizing: border-box;
+    }
+
+    .slide img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+    }
+
+
+
+  .row {
+    display: grid; /* 啟用 Grid */
+    grid-template-columns: repeat(3, 1fr); /* 設定 3 等分的列 */
+    row-gap: 10px; /* 垂直間距 20px */
+    column-gap: 40px; /* 水平間距 40px */
+  }
+
+  .image-container {
+    padding: 10px;
+    border: 1px solid #6e4825;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center; /* 文字置中 */
+  }
+
+  .image-container .title {
+    margin-bottom: 4px; /* 與圖片間距 */
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.indicator.active {
+    background-color: #333;
+}
+/* 新增：幻燈片上方文字樣式 */
+.slider-title {
+						text-align: center;
+						font-size: 2rem;
+						font-weight: bold;
+						color: #6e4825; /* 可根據需要調整顏色 */
+						margin-bottom: 20px;
+					}
+        </style>
+				
+			
+				<!-- Main -->
+					<div id="main">
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<div class="container">
+										<div class="pagination">
+											<a href="work - drew2022.html" class="page active">2022</a>
+											<a href="work - drew2023.html" class="page">2023</a>
+											<a href="work - drew2024.html" class="page">2024</a>
+
+									</div>
+										<div class="slider-title" id="slider-text">少女貓</div>
+									<div class="slider">
+										<div class="slides">
+											<div class="slide"><img src="images/6.jpg" alt="Image 1" onclick="openFullscreen(this)"></div>
+											<div class="slide"><img src="images/7.jpg" alt="Image 2" onclick="openFullscreen(this)"></div>
+							
+										</div>
+										<div class="arrow left-arrow" onclick="changeSlide(-1)">&#10094;</div>
+										<div class="arrow right-arrow" onclick="changeSlide(1)">&#10095;</div>
+										<div class="indicators">
+										</div>
+									</div>
+									<br>
+									<div class="row">
+										<div class="image-container">
+											<div class="title">早露</div>
+										  <a href="https://www.pixiv.net/artworks/96092642" target="_blank">
+											<img src="images/插畫/2022/1.jpg" alt="Image 1" />
+										  </a>
+										</div>
+										<div class="image-container">
+											<div class="title">兔女郎</div>
+											<a href="https://www.pixiv.net/artworks/101063338" target="_blank">
+											  <img src="images/插畫/2022/4.jpg" alt="Image 1" />
+											</a>
+										  </div>
+										  <div class="image-container">
+											<div class="title">卡雷</div>
+											<a href="https://www.pixiv.net/artworks/101313455" target="_blank">
+											  <img src="images/插畫/2022/7.jpg" alt="Image 1" />
+											</a>
+										  </div>
+										<div class="image-container">
+											<div class="title">真我</div>
+										  <a href="https://www.pixiv.net/artworks/98523031" target="_blank">
+											<img src="images/插畫/2022/2.jpg" alt="Image 2" />
+										  </a>
+										</div>
+										<div class="image-container">
+											<div class="title">女僕</div>
+											<a href="https://www.pixiv.net/artworks/100034041" target="_blank">
+											  <img src="images/插畫/2022/5.jpg" alt="Image 2" />
+											</a>
+										  </div>
+										  <div class="image-container">
+											<div class="title">w-禮服</div>
+											<a href="https://www.pixiv.net/artworks/100847632" target="_blank">
+											  <img src="images/插畫/2022/8.jpg" alt="Image 2" />
+											</a>
+										  </div>
+										<div class="image-container">
+											<div class="title">練習</div>
+										  <a href="https://www.pixiv.net/artworks/1001819341" target="_blank">
+											<img src="images/插畫/2022/3.jpg" alt="Image 3" />
+										  </a>
+										</div>
+										<div class="image-container">
+											<div class="title">大和赤骥(練習用)</div>
+											
+											  <img src="images/插畫/2022/6.jpg" alt="Image 3" />
+											</a>
+										  </div>
+										  <div class="image-container">
+											<div class="title">泳裝黑兔</div>
+											<a href="https://www.pixiv.net/artworks/101572818" target="_blank">
+											  <img src="images/插畫/2022/9.jpg" alt="Image 3" />
+											</a>
+										  </div>
+									  </div>
+									  
+									  
+									<script>
+										let currentIndex = 0;
+									
+									// 文字更新的函數
+									const slideTexts = [
+										"少女貓", // 幻燈片 1 的文字
+										"天堂"  // 幻燈片 1 的文字
+										
+										
+									
+									];
+								
+									function changeSlide(direction) {
+										const slides = document.querySelector('.slides');
+										const totalSlides = document.querySelectorAll('.slide').length;
+										const indicators = document.querySelectorAll('.indicator');
+								
+										currentIndex += direction;
+										if (currentIndex < 0) {
+											currentIndex = totalSlides - 1; // 循環到最後一張
+										} else if (currentIndex >= totalSlides) {
+											currentIndex = 0; // 循環到第一張
+										}
+								
+										const offset = -currentIndex * 100; // 計算位移
+										slides.style.transform = `translateX(${offset}%)`;
+								
+										// 更新指示器
+										indicators.forEach((indicator, index) => {
+											indicator.classList.toggle('active', index === currentIndex);
+										});
+								
+										// 更新文字
+										document.getElementById('slider-text').textContent = slideTexts[currentIndex];
+									}
+								
+									// 初始化指示器
+									function initIndicators() {
+										const totalSlides = document.querySelectorAll('.slide').length;
+										const indicatorsContainer = document.querySelector('.indicators');
+								
+										for (let i = 0; i < totalSlides; i++) {
+											const indicator = document.createElement('div');
+											indicator.classList.add('indicator');
+											if (i === 0) indicator.classList.add('active'); // 第一個啟用
+											indicator.addEventListener('click', () => {
+												currentIndex = i;
+												changeSlide(0); // 更新幻燈片
+											});
+											indicatorsContainer.appendChild(indicator);
+										}
+									}
+								
+									// 啟用全螢幕功能
+									function openFullscreen(img) {
+										if (img.requestFullscreen) {
+											img.requestFullscreen();
+										} else if (img.mozRequestFullScreen) {
+											img.mozRequestFullScreen(); // Firefox
+										} else if (img.webkitRequestFullscreen) {
+											img.webkitRequestFullscreen(); // Chrome, Safari, and Opera
+										} else if (img.msRequestFullscreen) {
+											img.msRequestFullscreen(); // IE/Edge
+										}
+									}
+								
+									// 初始化
+									initIndicators();
+
+									</script>		
+					</div>
+
+				</div>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; yanyanrstudio</li><li>Design: <a href="https://html5up.net">yanyanrstudio</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
